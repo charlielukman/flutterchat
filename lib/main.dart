@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterchat/widgets/ChatItemWidget.dart';
+import 'package:flutterchat/pages/ConversationPageList.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,11 +8,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Chat App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Hom'),
+      home:ConversationPageList(),
     );
   }
 }
@@ -30,15 +29,24 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: ChatItemWidget(2)
-      )
-    );
+    // return Scaffold(
+    //   appBar: AppBar(
+    //     // Here we take the value from the MyHomePage object that was created by
+    //     // the App.build method, and use it to set our appbar title.
+    //     title: Text(widget.title),
+    //   ),
+    //   body: Container(
+    //     child: Column(
+    //       children: <Widget>[
+    //         ChatListWidget(),
+
+    //       ],
+    //     )
+
+
+    //   )
+    // );
+
+    return Container(child: ConversationPageList());
   }
 }
