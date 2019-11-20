@@ -1,6 +1,6 @@
 # flutterchat
 
-Flutter Chat App
+Flutter Chat App https://travis-ci.com/charlielukman/flutterchat.svg?branch=master
 
 ## Getting Started
 
