@@ -3,7 +3,9 @@ import 'package:flutterchat/config/Palette.dart';
 
 class InputWidget extends StatelessWidget {
 
-  final TextEditingController textEditingController = new TextEditingController();
+  final TextEditingController textEditingController = TextEditingController();
+
+  InputWidget();
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +45,7 @@ class InputWidget extends StatelessWidget {
               child: new IconButton(
                 icon: new Icon(Icons.send),
                 onPressed: () => {},
-                color: Palette.primaryColor,
+                color: Palette.secondaryColor,
               ),
             ),
             color: Colors.white,
