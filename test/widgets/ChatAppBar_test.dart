@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutterchat/pages/ConversationPage.dart';
 import 'package:flutterchat/widgets/ChatAppBar.dart';
-import 'package:flutterchat/widgets/ChatListWidget.dart';
-import 'package:flutterchat/widgets/InputWidget.dart';
 
 void main(){
   const MaterialApp app = MaterialApp(
