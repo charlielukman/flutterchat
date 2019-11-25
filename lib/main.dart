@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterchat/pages/ConversationPageList.dart';
+import 'package:flutterchat/pages/ConversationPageSlide.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:ConversationPageList(),
+      home:ConversationPageSlide(),
     );
   }
 }
